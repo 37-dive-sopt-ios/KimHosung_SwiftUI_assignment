@@ -33,4 +33,10 @@ final class HomeViewModel: ObservableObject {
         Category(id: 8, title: "패스트푸드", image: .fastfood),
         Category(id: 9, title: "픽업", image: .pickup),
     ]
+    
+    @Published var oneBowls: [OneBowlModel] = [
+        OneBowlModel(id: 0, image: .bunsik, marketName: "백억보쌈제육", rating: 5.0, ratingCount: 1973, title: "[든든한 한끼] 보쌈 막국수", discountRate: 25, price: 12000, originPrice: 16000, minimumOrder: nil),
+        OneBowlModel(id: 1, image: .pizza, marketName: "백억보쌈제육", rating: 5.0, ratingCount: 1973, title: "(1인) 피자 + 사이드 Set", discountRate: 20, price: 12000, originPrice: 16000, minimumOrder: nil),
+        OneBowlModel(id: 2, image: .oneBowl, marketName: "백억보쌈제육", rating: 5.0, ratingCount: 1973, title: "(1인) 피자 Set", discountRate: 10, price: 10000, originPrice: 11000, minimumOrder: 10000),
+    ]
 }

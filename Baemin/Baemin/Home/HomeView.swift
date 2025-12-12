@@ -19,6 +19,7 @@ struct HomeView: View {
                     CategoryView(categorymenus: viewModel.categoryMenus)
                     MarketView(marketCategories: viewModel.marketCategories)
                     AdvertisementView(images: viewModel.adsImages)
+                    RankingView(oneBowls: viewModel.oneBowls)
                 } header: {
                     SearchView()
                 }
